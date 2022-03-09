@@ -23,7 +23,7 @@ namespace OWASP.WebGoat.NET
 		void LoadCity (String city)
 		{
             DataSet ds = du.GetOffice(city);
-            lblOutput.Text = "Here are the details for our " + city + " Office";
+            lblOutput.Text = "This fix is just for demonstoration purpose to get rid of the cross-site scripting vulnerability.";
             dtlView.DataSource = ds.Tables[0];
             dtlView.DataBind();
 		}
