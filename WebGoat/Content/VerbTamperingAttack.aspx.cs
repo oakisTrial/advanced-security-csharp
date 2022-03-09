@@ -9,7 +9,7 @@ namespace OWASP.WebGoat.NET
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            lblTampered.Text = tamperedMessage;
+            VerbTampering.tamperedMessage = Request.QueryString["message"];
         } 
     }
 }
