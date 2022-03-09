@@ -9,7 +9,8 @@ namespace OWASP.WebGoat.NET
     {
          protected void Page_Load(object sender, EventArgs e)
         {
-            lblTampered.Text = tamperedMessage;
+            ctx.Response.Write(
+            "The page \"" + ctx.Request.QueryString["page"] + "\" was not found.");
         } 
     }
 }
